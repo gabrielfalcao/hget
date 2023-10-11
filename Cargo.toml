@@ -1,0 +1,14 @@
+[package]
+name = "hget"
+version = "0.0.1"
+edition = "2021"
+license = "GPL-3.0-or-later"
+authors = ["Gabriel Falcão <gabrielteratos@gmail.com>"]
+description = "Resolves Hostnames"
+documentation = "https://docs.rs/hget"
+readme = "README.md"
+homepage = "https://github.com/gabrielfalcao/hget"
+
+
+[dependencies]
+clap = { version = "4.4.6", features = ["derive"] }
