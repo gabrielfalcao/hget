@@ -26,7 +26,7 @@ jobs:
           command: test
 
   ubuntu_cargo_build:
-    name: (Ubuntu) Cargo Build
+    name: (Ubuntu) Cargo Release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -38,7 +38,7 @@ jobs:
 
 
   macos_cargo_build:
-    name: (MacOS) Cargo Build
+    name: (MacOS) Cargo Release
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
