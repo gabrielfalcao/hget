@@ -31,11 +31,16 @@ impl Iterator for ResolutionQueue {
             self.c += 1;
             Some(match format!("{}:{}", &domain, self.p).to_socket_addrs() {
                 Ok(addrs) => addrs
-                    .map(|addr| format!("{}", if self.s {
-                format!("{}\t{}", addr.ip(), domain)
-            } else {
-                format!("{}", addr.ip())
-            }))
+                    .map(|addr| {
+                        format!(
+                            "{}",
+                            if self.s {
+                                format!("{}\t{}", addr.ip(), domain)
+                            } else {
+                                format!("{}", addr.ip())
+                            }
+                        )
+                    })
                     .collect::<Vec<String>>()
                     .join("\n"),
                 Err(e) => {
@@ -80,7 +85,6 @@ fn main() {
 #[cfg(test)]
 mod e2e {
     use super::*;
-    use std::io::Write;
 
     #[test]
     fn test_resolve_ok() {
