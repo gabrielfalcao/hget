@@ -52,4 +52,4 @@ run:
 	$(HGET_RUN) -s apple.com abc.xyz amazon.com meta.com snpc.cv
 
 
-.PHONY: e2e all clean cls release debug fix fmt check build test
+.PHONY: all clean cls release debug fix fmt check build test

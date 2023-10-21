@@ -12,3 +12,6 @@ homepage = "https://github.com/gabrielfalcao/hget"
 
 [dependencies]
 clap = { version = "4.4.6", features = ["derive"] }
+
+[dev-dependencies]
+mockall = "0.11.4"
