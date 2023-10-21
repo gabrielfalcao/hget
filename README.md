@@ -1,5 +1,8 @@
 # HGET
 
+[![Continuous Integration](https://github.com/gabrielfalcao/hget/actions/workflows/main.yml/badge.svg)](https://github.com/gabrielfalcao/hget/actions/workflows/main.yml)
+
+
 Simple Terminal Utility: Resolves Hostnames
 
 ```bash
